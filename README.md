@@ -1,20 +1,20 @@
-# jekyll-strapi-custom
+# jekyll-strapi-mod
 
->This plugin is a fork of the original jekyll-strapi plugin. The jekyll-strapi-custom plugin is compatible with Strapi v4
+>This plugin is a fork of the original jekyll-strapi plugin. The jekyll-strapi-mod plugin is compatible with Strapi v4
 
 ## Install
 
-Add the "jekyll-strapi-custom" gem to your Gemfile:
+Add the "jekyll-strapi-mod" gem to your Gemfile:
 
 ```ruby
-gem "jekyll-strapi-custom"
+gem "jekyll-strapi-mod"
 ```
 
-Then add "jekyll-strapi-custom" to your plugins in `_config.yml`:
+Then add "jekyll-strapi-mod" to your plugins in `_config.yml`:
 
 ```yaml
 plugins:
-    - jekyll-strapi-custom
+    - jekyll-strapi-mod
 ```
 
 ## Configuration
