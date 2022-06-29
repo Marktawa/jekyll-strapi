@@ -3,14 +3,13 @@ require "jekyll/strapi/version"
 
 Gem::Specification.new do |spec|
   spec.version = Jekyll::Strapi::VERSION
-  spec.homepage = "https://github.com/strapi/jekyll-strapi"
-  spec.authors = ["Strapi Solutions"]
-  spec.email = ["hi@strapi.io"]
+  spec.homepage = "https://github.com/Marktawa/jekyll-strapi-custom.git"
+  spec.authors = ["MarkTawa"]
+  spec.email = ["marktmunyaka@gmail.com"]
   spec.files = %W(README.md LICENSE) + Dir["lib/**/*"]
   spec.summary = "Strapi.io integration for Jekyll"
-  spec.name = "jekyll-strapi"
+  spec.name = "jekyll-strapi-custom"
   spec.license = "MIT"
-  spec.has_rdoc = false
   spec.require_paths = ["lib"]
   spec.description = spec.description = <<-DESC
     A Jekyll plugin for retrieving content from a Strapi API
