@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
     A Jekyll plugin for retrieving content from a Strapi API
   DESC
 
-  spec.add_runtime_dependency("jekyll", ">= 4")
+  spec.add_runtime_dependency("jekyll", "~> 4")
   spec.add_runtime_dependency("http", "~> 3.2")
   spec.add_runtime_dependency("json", "~> 2.1")
 end
