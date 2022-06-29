@@ -1,18 +1,20 @@
-# jekyll-strapi
+# jekyll-strapi-custom
+
+>This plugin is a fork of the original jekyll-strapi plugin. The jekyll-strapi-custom plugin is compatible with Strapi v4
 
 ## Install
 
-Add the "jekyll-strapi" gem to your Gemfile:
+Add the "jekyll-strapi-custom" gem to your Gemfile:
 
-```
-gem "jekyll-strapi"
+```ruby
+gem "jekyll-strapi-custom"
 ```
 
-Then add "jekyll-strapi" to your plugins in `_config.yml`:
+Then add "jekyll-strapi-custom" to your plugins in `_config.yml`:
 
-```
+```yaml
 plugins:
-    - jekyll-strapi
+    - jekyll-strapi-custom
 ```
 
 ## Configuration
@@ -20,7 +22,7 @@ plugins:
 ```yaml
 strapi:
     # Your API endpoint (optional, default to http://localhost:1337)
-    endpoint: http://localhost:1337
+    endpoint: http://localhost:1337/api
     # Collections, key is used to access in the strapi.collections
     # template variable
     collections:
@@ -46,14 +48,14 @@ Collections are accessed by their name in `strapi.collections`. The `articles` c
 
 To list all documents of the collection:
 
-```
+```html
 {% for post in strapi.collections.articles %}
 <article>
     <header>
-        {{ post.title }}
+        {{ post.attributes.title }}
     </header>
     <div class="body">
-        {{ post.content }}
+        {{ post.attributes.content }}
     </div>
 </article>
 {% endfor %}
