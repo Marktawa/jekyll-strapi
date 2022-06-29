@@ -38,7 +38,7 @@ module Jekyll
       end
 
       def url_placeholders
-        requiredValues = @document.to_h.select {|k, v|
+        requiredValues = @document.attributes.to_h.select {|k, v|
           v.class == String and @collection.config['permalink'].include? k.to_s
         }
 
