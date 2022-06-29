@@ -4,8 +4,8 @@ require "jekyll/strapi/version"
 Gem::Specification.new do |spec|
   spec.version = Jekyll::Strapi::VERSION
   spec.homepage = "https://github.com/Marktawa/jekyll-strapi-custom.git"
-  spec.authors = ["MarkTawa"]
-  spec.email = ["marktmunyaka@gmail.com"]
+  spec.authors = ["marktawa"]
+  spec.email = ["markmunyaka@gmail.com"]
   spec.files = %W(README.md LICENSE) + Dir["lib/**/*"]
   spec.summary = "Strapi.io integration for Jekyll"
   spec.name = "jekyll-strapi-custom"
