@@ -21,12 +21,14 @@ plugins:
 
 ```yaml
 strapi:
-    # Your API endpoint (optional, default to http://localhost:1337)
+    # Your API endpoint (optional, default to http://localhost:1337/api)
     endpoint: http://localhost:1337/api
+    # Your REST API endpoint query string to specify a parameter for example http://localhost:1337/api/posts?populate=%2A (optional, default to populate=*)
+    parameter: populate=*
     # Collections, key is used to access in the strapi.collections
     # template variable
     collections:
-        # Example for a "articles" collection
+        # Example for an "articles" collection
         articles:         
             # Collection name (optional)
             type: article
