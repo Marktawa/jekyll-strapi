@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.license = "MIT"
   spec.require_paths = ["lib"]
   spec.description = spec.description = <<-DESC
-    A Jekyll plugin for retrieving content from a Strapi API
+    A Jekyll plugin for retrieving content from a Strapi API. Works with Strapi v4
   DESC
 
   spec.add_runtime_dependency("jekyll", "~> 4")
